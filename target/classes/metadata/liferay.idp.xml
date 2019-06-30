@@ -1,0 +1,41 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="Lenovo Portal POC">
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <ds:DigestValue>zEi+hPmf+7SaFGbtiGiIpmsCcW8=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      MRDKH0tixblb4hU6iG3hhqdpw+b+GargeDrlMMVAHiXPkehQsfZ2phdPZTsiik5q4Iko0b4qeiXLlsxLspZXArzJ4WTwk+U0NzZs344aJVIZvfK7SZ5BeFJb/OQlrpqxi9JIiO8bfhqKf0vjdR8KG+KtItkBr6LDMT7x7jGuP2cNee3DNWiUqS8q4lJaLrAGXk0UI6+kTe0zQFKkH9sb7HDnKxdGQewy39/3mjGob2RPnQxiQ6Pfal4gpvijhab/XS+gVtp2sK4/ePWAHfshIPc/fDpcpjH4BmQNDgpKQydWEIj/HVc6mfmWnjfi3tdM4xfjcrI2aR//z74Zr8/HYw==
+    </ds:SignatureValue>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>
+          MIICvTCCAaUCBgFqWLfRZDANBgkqhkiG9w0BAQUFADAiMQ8wDQYDVQQDDAZMZW5vdm8xDzANBgNV BAoMBkxlbm92bzAeFw0xOTA0MjYwODE2NDJaFw0yMDA0MTYwODE2NDJaMCIxDzANBgNVBAMMBkxl bm92bzEPMA0GA1UECgwGTGVub3ZvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkLU1 QgJ56G1gdmcs+3w58yZpaRjoDJQyth2e+SsjKybA8zgfWg7dxOzIO/eT8oXKBuGsH44iPzW0u0ys obgkE5ps/8gKeBSgPmtLvX94aYtyn24d2cg08D/AEngyPQFoMhoXDN6yG3qAbf9OZ/ISjhz0U7aO 3BgtEOSWFRtA8glePDTJt5XvWOeXXJpzmjNBXTV3pEd6ppPXbkfTCir+ng0KgB61wJW7wkW+Ho+G fVivlbYprcqOxHRt01SnbACFlCkE9L5/7J9DopV6ZVyIuU7c66TOB9VMZD67VxMyucWphSnmJbg9 WEH6Bq4KQudBopZQr7fEkCj9/phFePEjxwIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAfMveCbELS om1PGD+5ynksfCUEhaSKM9nyeIozOxX65Lh8wuDlU31mdG1LqxBMrohyz8q/ac60qSWC/mYi0fe7 QFhVVsnttH+w1LC8I1OpS+z4qExc3mV7BHMrCG8joA0npRr80e2HSDaKWAYUb8hqCK1EKELE5DZS MSh6LrIdqnT2FFpMhMXZkbRCxxS1W6pBw2ajivyHNVgHOKA7KdvmJHOQXuoWx5g3ogG2M9vEJdGA 4s3VE5OlDWIpAJDr9pCBgk+OeD/yvp8KENRwa6ksg6/PRCv9nrl4tNmm60zQk71a5YMH0E8Cy+4f VI9MvaOsmRZBdf6Oqqq2ZrzDtsYV
+        </ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIICvTCCAaUCBgFqWLfRZDANBgkqhkiG9w0BAQUFADAiMQ8wDQYDVQQDDAZMZW5vdm8xDzANBgNV BAoMBkxlbm92bzAeFw0xOTA0MjYwODE2NDJaFw0yMDA0MTYwODE2NDJaMCIxDzANBgNVBAMMBkxl bm92bzEPMA0GA1UECgwGTGVub3ZvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkLU1 QgJ56G1gdmcs+3w58yZpaRjoDJQyth2e+SsjKybA8zgfWg7dxOzIO/eT8oXKBuGsH44iPzW0u0ys obgkE5ps/8gKeBSgPmtLvX94aYtyn24d2cg08D/AEngyPQFoMhoXDN6yG3qAbf9OZ/ISjhz0U7aO 3BgtEOSWFRtA8glePDTJt5XvWOeXXJpzmjNBXTV3pEd6ppPXbkfTCir+ng0KgB61wJW7wkW+Ho+G fVivlbYprcqOxHRt01SnbACFlCkE9L5/7J9DopV6ZVyIuU7c66TOB9VMZD67VxMyucWphSnmJbg9 WEH6Bq4KQudBopZQr7fEkCj9/phFePEjxwIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAfMveCbELS om1PGD+5ynksfCUEhaSKM9nyeIozOxX65Lh8wuDlU31mdG1LqxBMrohyz8q/ac60qSWC/mYi0fe7 QFhVVsnttH+w1LC8I1OpS+z4qExc3mV7BHMrCG8joA0npRr80e2HSDaKWAYUb8hqCK1EKELE5DZS MSh6LrIdqnT2FFpMhMXZkbRCxxS1W6pBw2ajivyHNVgHOKA7KdvmJHOQXuoWx5g3ogG2M9vEJdGA 4s3VE5OlDWIpAJDr9pCBgk+OeD/yvp8KENRwa6ksg6/PRCv9nrl4tNmm60zQk71a5YMH0E8Cy+4f VI9MvaOsmRZBdf6Oqqq2ZrzDtsYV
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://10.251.65.247:8080/c/portal/saml/slo"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://10.251.65.247:8080/c/portal/saml/slo"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://10.251.65.247:8080/c/portal/saml/sso"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://10.251.65.247:8080/c/portal/saml/sso"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>

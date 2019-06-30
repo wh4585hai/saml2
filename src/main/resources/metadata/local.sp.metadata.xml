@@ -1,0 +1,65 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="localhostlenovo" entityID="localhostlenovo">
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <ds:Reference URI="#localhostlenovo">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <ds:DigestValue>wQSgWKFE9tL9Q+H32BIpLSf5PnV1x23n/cJlwDE1wYI=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      PVXhuHC0X388CIEMOp0cwY1UfIKjjllpsNeWWWcmmLcZuTg8WtC0GNjgQSnEWem+y7TDJTo0lw59/2rJegUiirjPb2OHu2zMdx/lFCktY4fuvmDRhsIhcGuK5VYOvZ2dHqtZAoOQYYH1LDTVtLQ4gvCCHnP5RjN5Az02J9RCoRLNnJhsArDlW77pat+d23fGzqB8eGF8eBS8cmQEkbWvM19K/Sz/2I4ewX333L4ZtoHNdk+Tz52kzLBIXmJhdWHdJXCk2od0nFE0f+ajnzedqdwiJrSRocCCalWwlWGQ20vzxsJKtEzKXeHDc0JP/1VuxmHNuaox+gnir/lvPE3x3w==
+    </ds:SignatureValue>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>
+          MIICyjCCAbICCQCBSD9UXxmspTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQKDBxPcmdhbml6YXRp b24sIENOPUxlbm92b1NQMTIzMB4XDTE5MDUxNDA4MTQzNVoXDTI5MDUxMzA4MTQzNVowJzElMCMG A1UECgwcT3JnYW5pemF0aW9uLCBDTj1MZW5vdm9TUDEyMzCCASIwDQYJKoZIhvcNAQEBBQADggEP ADCCAQoCggEBALn4dPtePepr6TZdHh0B0EvQtgQVbUXxtvR0xEg/DK85hmJ3+RODpT3kCg2S9oTr Ph1u9289o89BYSTfKXf1Yv+2/tkoDxooYVBsY2CzeFSMv1lyu5JYT8LU3nnoJV7t2Mh4ycY5FBJj hAP3Zb+cbD48n37GVOD6XshDafhliqPJdxSp3C9Y+bQ3Rqqkmh+ibbuFwAUKCfzA+iv5iwWCp+iJ ZAOmCSDiE+YNaFHqVqjkIEeWmxDqnvoBsmSMaJri3E8mV4cRsxrv/5vOjAPyI+tGH5SJkjaaKacn j7LWCVnqhvG9/swm9wrGmX9YplF4qjZNu07BQmLMU9FGBgVz20kCAwEAATANBgkqhkiG9w0BAQsF AAOCAQEARh28zAQw0shpnbq5oEIMSlsLxtF7iAEZCSzrL9rqRCXIMzzhFjgc74GOXaoIxdbDqhBb 1TVVbT7Em+pFIMxuQIBCggelCZK9dEw/OBxy81ocI3b0EmCaB/6xa6azlgqyT+Oq7NnYjrURVQKM D2zHSM8u7x8evGvvXkS2Ltv09YBSE9x8k3Emf+8bbbVKBaL1y54VgTFjMk+ino1ygHlCUO5rPCOr wcojRRgcbA7L+pKm+leTDJ3asDGeLe1hUj+1mYz6VNKN4HY+m0po69HEzKzdeQCpDtANqsv2e3qk b+DMULsMeJtvkHk+VFJQiTV0DOTBd0dAuA+1V4JbCnCccA==
+        </ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+  <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIICyjCCAbICCQCBSD9UXxmspTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQKDBxPcmdhbml6YXRp b24sIENOPUxlbm92b1NQMTIzMB4XDTE5MDUxNDA4MTQzNVoXDTI5MDUxMzA4MTQzNVowJzElMCMG A1UECgwcT3JnYW5pemF0aW9uLCBDTj1MZW5vdm9TUDEyMzCCASIwDQYJKoZIhvcNAQEBBQADggEP ADCCAQoCggEBALn4dPtePepr6TZdHh0B0EvQtgQVbUXxtvR0xEg/DK85hmJ3+RODpT3kCg2S9oTr Ph1u9289o89BYSTfKXf1Yv+2/tkoDxooYVBsY2CzeFSMv1lyu5JYT8LU3nnoJV7t2Mh4ycY5FBJj hAP3Zb+cbD48n37GVOD6XshDafhliqPJdxSp3C9Y+bQ3Rqqkmh+ibbuFwAUKCfzA+iv5iwWCp+iJ ZAOmCSDiE+YNaFHqVqjkIEeWmxDqnvoBsmSMaJri3E8mV4cRsxrv/5vOjAPyI+tGH5SJkjaaKacn j7LWCVnqhvG9/swm9wrGmX9YplF4qjZNu07BQmLMU9FGBgVz20kCAwEAATANBgkqhkiG9w0BAQsF AAOCAQEARh28zAQw0shpnbq5oEIMSlsLxtF7iAEZCSzrL9rqRCXIMzzhFjgc74GOXaoIxdbDqhBb 1TVVbT7Em+pFIMxuQIBCggelCZK9dEw/OBxy81ocI3b0EmCaB/6xa6azlgqyT+Oq7NnYjrURVQKM D2zHSM8u7x8evGvvXkS2Ltv09YBSE9x8k3Emf+8bbbVKBaL1y54VgTFjMk+ino1ygHlCUO5rPCOr wcojRRgcbA7L+pKm+leTDJ3asDGeLe1hUj+1mYz6VNKN4HY+m0po69HEzKzdeQCpDtANqsv2e3qk b+DMULsMeJtvkHk+VFJQiTV0DOTBd0dAuA+1V4JbCnCccA==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIICyjCCAbICCQCBSD9UXxmspTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQKDBxPcmdhbml6YXRp b24sIENOPUxlbm92b1NQMTIzMB4XDTE5MDUxNDA4MTQzNVoXDTI5MDUxMzA4MTQzNVowJzElMCMG A1UECgwcT3JnYW5pemF0aW9uLCBDTj1MZW5vdm9TUDEyMzCCASIwDQYJKoZIhvcNAQEBBQADggEP ADCCAQoCggEBALn4dPtePepr6TZdHh0B0EvQtgQVbUXxtvR0xEg/DK85hmJ3+RODpT3kCg2S9oTr Ph1u9289o89BYSTfKXf1Yv+2/tkoDxooYVBsY2CzeFSMv1lyu5JYT8LU3nnoJV7t2Mh4ycY5FBJj hAP3Zb+cbD48n37GVOD6XshDafhliqPJdxSp3C9Y+bQ3Rqqkmh+ibbuFwAUKCfzA+iv5iwWCp+iJ ZAOmCSDiE+YNaFHqVqjkIEeWmxDqnvoBsmSMaJri3E8mV4cRsxrv/5vOjAPyI+tGH5SJkjaaKacn j7LWCVnqhvG9/swm9wrGmX9YplF4qjZNu07BQmLMU9FGBgVz20kCAwEAATANBgkqhkiG9w0BAQsF AAOCAQEARh28zAQw0shpnbq5oEIMSlsLxtF7iAEZCSzrL9rqRCXIMzzhFjgc74GOXaoIxdbDqhBb 1TVVbT7Em+pFIMxuQIBCggelCZK9dEw/OBxy81ocI3b0EmCaB/6xa6azlgqyT+Oq7NnYjrURVQKM D2zHSM8u7x8evGvvXkS2Ltv09YBSE9x8k3Emf+8bbbVKBaL1y54VgTFjMk+ino1ygHlCUO5rPCOr wcojRRgcbA7L+pKm+leTDJ3asDGeLe1hUj+1mYz6VNKN4HY+m0po69HEzKzdeQCpDtANqsv2e3qk b+DMULsMeJtvkHk+VFJQiTV0DOTBd0dAuA+1V4JbCnCccA==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:9090/saml/SingleLogout"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:9090/saml/SingleLogout"/>
+    <md:NameIDFormat>
+      urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+    </md:NameIDFormat>
+    <md:NameIDFormat>
+      urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+    </md:NameIDFormat>
+    <md:NameIDFormat>
+      urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+    </md:NameIDFormat>
+    <md:NameIDFormat>
+      urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
+    </md:NameIDFormat>
+    <md:NameIDFormat>
+      urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName
+    </md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:9090/saml/SSO" index="0" isDefault="true"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://localhost:9090/saml/SSO" index="1"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
